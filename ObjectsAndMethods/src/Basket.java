@@ -23,7 +23,7 @@ public class Basket {
 
 
     public  void add(String name, int price) {
-        add(name, price, 2, 1);
+        add(name, price, 1, 1);
 
     }
     public void add(String name, int price, int count, double weight) {
