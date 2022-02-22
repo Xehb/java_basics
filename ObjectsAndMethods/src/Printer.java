@@ -1,5 +1,6 @@
 public class Printer {
     public String queue = "";
+    public int pendingPagesCount = 0;
 
 
     public void appened(String name, String docText, int pages) {
@@ -9,8 +10,8 @@ public class Printer {
         }
         queue = queue + name + "\n" +
                 docText + "\n" +
-                "Колличество листов: " + pages +"\n";
-
+                "Колличество листов: " + pages + "\n";
+        pendingPagesCount = pendingPagesCount + pages;
     }
 
     public void appened(String docText) {
@@ -21,8 +22,13 @@ public class Printer {
         appened(name, docText, 1);
     }
 
+    public int getPendingPagesCount() {
+        return pendingPagesCount;
+    }
+
     public void clear() {
         queue = "Очищено";
+        pendingPagesCount = 0;
     }
 
     public boolean containts(String name) {
@@ -35,9 +41,12 @@ public class Printer {
             System.out.println("Нет печати");
         } else {
             System.out.println(queue);
+//            System.out.println(pendingPagesCount);
         }
         clear();
         System.out.println(queue);
+//                    System.out.println(pendingPagesCount);
+
     }
 }
 
