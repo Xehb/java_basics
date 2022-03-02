@@ -1,15 +1,18 @@
 public class MainArithmetic {
     public static void main(String[] args) {
-        Arithmetic arithmetic = new Arithmetic ();
-
-        arithmetic.division(2, 0);
-        arithmetic.print();
-        arithmetic.multiplication(2,-2);
-        arithmetic.print();
-        arithmetic.addition(6,0);
-        arithmetic.print();
-        arithmetic.deduction(4,6);
-        arithmetic.print();
+        Arithmetic payment = new Arithmetic(4, 0);
+        payment.division();
+        payment.print();
+        payment.multiplication();
+        payment.print();
+        payment.addition();
+        payment.print();
+        payment.deduction();
+        payment.print();
+        payment.comparisonMax();
+        payment.print();
+        payment.comparisonMinimal();
+        payment.print();
 
 
     }

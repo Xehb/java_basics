@@ -5,44 +5,75 @@ public class Arithmetic {
     private int c;
 
 
-//    public Arithmetic(int a, int b) {
-//        this.a = a;
-//        this.b = b;
-//    }
+    public Arithmetic(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
 
-    public void addition(int a, int b) {
+
+    public int addition() {
         c = a + b;
+        return c;
     }
 
-    public void multiplication(int a, int b) {
+
+    public int multiplication() {
         c = a * b;
+        return c;
     }
 
-    public void division(int a, int b) {
+    public int division() {
         if (b != 0) {
             c = a / b;
         } else {
             System.out.println(error);
 
         }
-
-
+        return c;
     }
 
-    public void deduction(int a, int b) {
+
+    public int deduction() {
         c = a - b;
+        return c;
     }
 
-    public void print() {
-        boolean error = false;
-        if (error = true)
-        {
-            System.out.println(c);
+    public int comparisonMax() {
+        if (a > b) {
+            c = a;
+        } if ( b > a) {
+            c = b;
         } else {
+          c = a ;
 
         }
+        return c;
     }
+
+    public int comparisonMinimal() {
+        if (a < b) {
+            c = a;
+        } if ( b < a) {
+            c = b;
+        } else {
+            c = a;
+
+        }
+        return c;
+
+    }
+//
+//    public void print() {
+//        boolean error = true;
+//        if (error) {
+//            System.out.println(c);
+//        } else {
+//
+//        }
+//    }
 }
+
+
 
 
 
