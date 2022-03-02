@@ -23,6 +23,7 @@ public class Printer {
     }
 
     public int getPendingPagesCount() {
+
         return pendingPagesCount;
     }
 
