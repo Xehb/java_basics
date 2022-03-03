@@ -1,8 +1,7 @@
 public class Arithmetic {
-    private String error = "Ошибка";
     private int a;
     private int b;
-    private int c;
+
 
 
     public Arithmetic(int a, int b) {
@@ -12,66 +11,65 @@ public class Arithmetic {
 
 
     public int addition() {
-        c = a + b;
-        return c;
+        return a + b;
     }
 
 
     public int multiplication() {
-        c = a * b;
-        return c;
+        return a * b;
+
     }
 
-    public int division() {
-        if (b != 0) {
-            c = a / b;
-        } else {
-            System.out.println(error);
+    public double division() {
 
-        }
-        return c;
+        return a / b;
     }
 
 
     public int deduction() {
-        c = a - b;
-        return c;
+        return a - b;
+
     }
 
     public int comparisonMax() {
         if (a > b) {
-            c = a;
-        } if ( b > a) {
-            c = b;
+            return a;
+        }
+        if (b > a) {
+            return b;
         } else {
-          c = a ;
+            return a;
 
         }
-        return c;
+
     }
 
     public int comparisonMinimal() {
         if (a < b) {
-            c = a;
-        } if ( b < a) {
-            c = b;
+            return a;
+        }
+        if (b < a) {
+            return b;
         } else {
-            c = a;
+            return a;
 
         }
-        return c;
+
 
     }
-//
-//    public void print() {
-//        boolean error = true;
-//        if (error) {
-//            System.out.println(c);
-//        } else {
-//
-//        }
-//    }
+
+    public void print() {
+
+        System.out.println("большее число:" + comparisonMax());
+        System.out.println("меньшее число:" + comparisonMinimal());
+        System.out.println("результат вычетания:" +deduction());
+        System.out.println("результат деления:" + division());
+        System.out.println("результат сложения:" + addition());
+        System.out.println("результат умножения:" + multiplication());
+
+    }
 }
+
 
 
 
