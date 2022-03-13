@@ -1,6 +1,6 @@
 public class MainArithmetic {
     public static void main(String[] args) {
-        Arithmetic payment = new Arithmetic(4, 3);
+        Arithmetic payment = new Arithmetic(78, 24);
         payment.division();
         payment.multiplication();
         payment.addition();
