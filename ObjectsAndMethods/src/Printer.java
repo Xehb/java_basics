@@ -14,7 +14,7 @@ public class Printer {
 
     public void appened(String docText) {
 
-        appened("Неизвестнрое имя", docText, 1);
+        appened("Неизвестнрое имя", docText, 1) афваа;
     }
 
     public void appened(String name, String docText) {
